@@ -29,7 +29,7 @@ module.exports = {
             ref: "origin/master",
             repo: "git@github.com:zcg331793187/jenkins-express.git",
             path: "/data/www/production",
-            "post-deploy": "npm install && pm2 startOrRestart ecosystem.json.js --env production"
+            "post-deploy": "npm install && pm2 startOrRestart ecosystem.config.js --env production"
         }
     }
 }
